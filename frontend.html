@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+  background: rgb(102, 223, 58);
+  background-image: url(https://i.pinimg.com/originals/bc/f6/7b/bcf67b6246b68b1f43a98b219fabe105.gif);
+}
+
+.wrapper {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  left: 52%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-image: linear-gradient(to top, #dd7dd7 0%, #e7f0fd 100%);
+  overflow: hidden;
+  opacity: 0.4;
+  
+}
+
+.wave {
+  width: 1000px;
+  height: 700px;
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  margin-left: -500px;
+  margin-top: -500px;
+  border-radius: 35%;
+  background: rgb(167, 2, 62);
+  animation: wave 15s infinite linear;
+}
+
+@keyframes wave {
+  from { transform: rotate(0deg);}
+  from { transform: rotate(360deg);}
+}
+</style>
+<body>
+    <div class="wrapper">
+        <div class="wave"></div>
+    </div>
+</body>
+</html>
